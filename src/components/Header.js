@@ -46,7 +46,7 @@ const Header = (props) => {
     auth.onAuthStateChanged((user) => {
       if (user) {
         setUser(user);
-        navigator.push("/home");
+        Navigate("/home");
       }
     });
   }, [userName]);
